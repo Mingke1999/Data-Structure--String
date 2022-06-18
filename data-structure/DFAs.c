@@ -10,7 +10,7 @@
 * vertice 1 matching nothing
 * vertice 2 if (a) stay if c go back beginning since ac not match start
 * vertice 3 matched a(b),if b or c go back beginnning since 'abb' and 'abc' not matching any
-* vertice	4 matched ab(a), if a again ->aba'a' go vertica 2, if b go back vertice 3 aba'b'
+* vertice 4 matched ab(a), if a again ->aba'a' go vertica 2, if b go back vertice 3 aba'b'
 * vertice 5 success aba(c)
 */
 int state = 0; //record the matching state
