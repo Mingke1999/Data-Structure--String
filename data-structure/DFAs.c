@@ -7,11 +7,11 @@
 * Deterministic Finite Automata DFA also referred to as a finite state machine(FSM)
 * DFA contains states "start" and "finish"
 * Example:matching pattern "abac"
-* vertice 1 matching nothing
-* vertice 2 if (a) stay if c go back beginning since ac not match start
-* vertice 3 matched a(b),if b or c go back beginnning since 'abb' and 'abc' not matching any
-* vertice 4 matched ab(a), if a again ->aba'a' go vertica 2, if b go back vertice 3 aba'b'
-* vertice 5 success aba(c)
+* vertice 0 match nothing, not start
+* vertice 1 if (a) stay if c go back beginning since ac not match start
+* vertice 2 matched a(b),if b or c go back beginnning since a'bb' and a'bc' not matching any
+* vertice 3 matched ab(a), if a again ->aba'a' go vertica 1, if b go back vertice 2 aba'b'
+* vertice 4 success aba(c)
 */
 int state = 0; //record the matching state
 
